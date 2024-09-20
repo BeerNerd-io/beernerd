@@ -228,7 +228,7 @@ header.open {
     transform: translate(-50%, -50%);
     width: 120px;  /* Increased from 80px to 120px */
     height: 120px; /* Increased from 80px to 120px */
-    background: url('../images/logo.svg') no-repeat center center;
+    background: url('../images/logo.png') no-repeat center center;
     background-size: contain;
     opacity: 0.7;
     z-index: 2;
@@ -546,6 +546,41 @@ main {
     margin-bottom: 2rem;
 }
 
-/* ... (rest of the styles remain the same) ... */
+/* Add these styles to your existing css/styles.css file */
+
+.content-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content-section h2 {
+    color: #a9a42c;
+    margin-bottom: 1rem;
+}
+
+.head-nerd {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.head-nerd-photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.head-nerd-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head-nerd h2 {
+    color: #a9a42c;
+    margin-bottom: 1rem;
+}
 
 
