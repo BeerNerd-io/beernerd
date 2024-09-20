@@ -1,0 +1,31 @@
+{
+    "projectName": "Beernerd.io PWA",
+    "promptFile": "projectoutline.md",
+    "rules": [
+      {
+        "name": "Follow PWA Best Practices",
+        "pattern": "*.{html,js,css}",
+        "prompt": "Ensure this file adheres to PWA best practices as outlined in the project prompt."
+      },
+      {
+        "name": "Brand Guidelines Compliance",
+        "pattern": "*.{html,css}",
+        "prompt": "Verify that this file follows the Beernerd.io brand guidelines, including color scheme and typography."
+      },
+      {
+        "name": "Accessibility and SEO",
+        "pattern": "*.html",
+        "prompt": "Check that this HTML file includes proper semantic structure, ARIA attributes where necessary, and appropriate meta tags for SEO."
+      },
+      {
+        "name": "JavaScript Best Practices",
+        "pattern": "*.js",
+        "prompt": "Ensure this JavaScript file uses ES6+ features, implements proper error handling, and is well-documented."
+      },
+      {
+        "name": "CSS Optimization",
+        "pattern": "*.css",
+        "prompt": "Verify that this CSS file follows a mobile-first approach and uses efficient, well-organized styles."
+      }
+    ]
+  }

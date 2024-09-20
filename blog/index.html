@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeerNerd Blog - Craft Beer and Technology</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Maitree:wght@400;700&family=Molle&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <img src="../images/white.png" alt="BeerNerd Logo" class="logo">
+    </header>
+
+    <nav class="nav-drawer">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="mailto:info@beernerd.io">Contact</a></li>
+        </ul>
+        <img src="../images/logo.svg" alt="BeerNerd Logo" class="drawer-logo">
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="beer-mug-container">
+                <div class="beer-mug">
+                    <div class="mug"></div>
+                    <div class="handle"></div>
+                    <div class="beer"></div>
+                    <div class="foam"></div>
+                    <!-- Add bubbles here as in index.html -->
+                </div>
+            </div>
+            <div class="hero-box">
+                <h1 class="orbitron">Coming Soon</h1>
+                <p class="maitree">Our blog is brewing. Check back soon for the latest in craft beer and technology!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="../images/white.png" alt="BeerNerd Logo" class="footer-logo">
+            <div class="footer-copyright">
+                &copy; 2023 Beer Nerd LLC. All rights reserved.
+            </div>
+            <div class="footer-partner">
+                Proudly partnered with <a href="https://www.citybrewtours.com/austin/" target="_blank" rel="noopener noreferrer">City Brew Tours Austin</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="offline-notification" style="display: none;">
+        You are currently offline. Some features may be unavailable.
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
