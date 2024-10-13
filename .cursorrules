@@ -1,0 +1,25 @@
+{
+  "project": {
+    "name": "Beer Nerd Labs",
+    "description": "Minimalistic, high-performance PWA for managing DIY projects focused on simplicity, craftsmanship, and community."
+  },
+  "settings": {
+    "linting": true,
+    "minify": true,
+    "css_preprocessor": "none",
+    "build_tools": {
+      "html_minifier": true,
+      "css_minifier": true,
+      "js_minifier": true
+    },
+    "service_workers": true,
+    "offline_mode": true,
+    "version_control": "git"
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "auto_deploy": true,
+    "branch": "main",
+    "auto_commit_message": "Auto-deployed via Cursor Composer"
+  }
+}
