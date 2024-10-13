@@ -5,9 +5,9 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdir -p js css",
+    "prebuild": "mkdir -p js css images",
     "build": "terser src/js/app.js -o js/app.min.js && cssnano src/css/styles.css > css/styles.min.css",
-    "postbuild": "cp src/images/* images/ && cp src/manifest.json . && cp src/service-worker.js .",
+    "postbuild": "cp -R src/images/* images/ && cp src/manifest.json . && cp src/service-worker.js .",
     "start": "live-server --port=8080 --entry-file=index.html",
     "dev": "npm run build && npm start",
     "predeploy": "npm run build",
