@@ -1,0 +1,24 @@
+{
+  "name": "beernerdlabs",
+  "version": "1.0.0",
+  "description": "Beer Nerd Labs PWA",
+  "main": "src/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "mkdir -p public/js public/css",
+    "build": "npm run prebuild && terser src/js/app.js -o public/js/app.min.js && terser src/components/tasks.js -o public/js/tasks.min.js && cssnano src/css/styles.css public/css/styles.min.css",
+    "start": "live-server public --port=8080 --entry-file=index.html",
+    "dev": "npm run build && npm start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "terser": "^5.34.1",
+    "cssnano-cli": "^1.0.5",
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://yourusername.github.io/beernerdlabs"
+}

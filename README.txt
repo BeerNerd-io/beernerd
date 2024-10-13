@@ -88,3 +88,14 @@ The primary colors for the app are **Venom Green (#a9a42c)**, **Matte Black (#28
 ---
 
 This prompt gives **Cursor Composer** all the context it needs to maximize efficiency in your development environment. It will help Claude 3.5 Sonnet automate key tasks, streamline error-checking, and ensure high performance and scalability in the future.
+
+Now, you can use the following npm commands:
+npm run build: This will minify your JavaScript and CSS files.
+npm start: This will start the live server.
+npm run dev: This will build your project and then start the live server.
+To start developing:
+Run npm run dev in your terminal.
+Open your browser and go to http://localhost:8080.
+Make changes to your source files in the src directory.
+Run npm run build to update the minified files.
+Refresh your browser to see the changes.

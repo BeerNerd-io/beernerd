@@ -21,3 +21,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 
+# Minified files
+*.min.js
+*.min.css
+
+public/css/*.min.css
+public/js/*.min.js
