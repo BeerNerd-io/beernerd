@@ -1,11 +1,11 @@
 const CACHE_NAME = 'beer-nerd-labs-v1';
 const urlsToCache = [
-    '/beernerdlabs/',
-    '/beernerdlabs/index.html',
-    '/beernerdlabs/manifest.json',
-    '/beernerdlabs/css/styles.min.css',
-    '/beernerdlabs/js/app.min.js',
-    '/beernerdlabs/js/tasks.min.js',
+    '/beernerd/',
+    '/beernerd/index.html',
+    '/beernerd/manifest.json',
+    '/beernerd/css/styles.min.css',
+    '/beernerd/js/app.min.js',
+    '/beernerd/js/tasks.min.js',
 ];
 
 self.addEventListener('install', (event) => {

@@ -1,5 +1,5 @@
 {
-  "name": "beernerdlabs",
+  "name": "beernerd",
   "version": "1.0.0",
   "description": "Beer Nerd Labs PWA",
   "main": "src/js/app.js",
@@ -20,5 +20,5 @@
     "cssnano-cli": "^1.0.5",
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://yourusername.github.io/beernerdlabs"
+  "homepage": "https://beernerd-io.github.io/beernerd"
 }
