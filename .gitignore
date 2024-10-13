@@ -18,9 +18,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 
-# Do not ignore minified files
-# *.min.js
-# *.min.css
+# Don't ignore minified files
+# !js/*.min.js
+# !css/*.min.css
 
 public/css/*.min.css
 public/js/*.min.js

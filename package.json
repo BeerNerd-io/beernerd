@@ -4,22 +4,15 @@
   "description": "Beer Nerd Labs PWA",
   "main": "src/js/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdir -p js css images",
     "build": "terser src/js/app.js -o js/app.min.js && cssnano src/css/styles.css > css/styles.min.css",
-    "postbuild": "cp -R src/images/* images/ && cp src/manifest.json . && cp src/service-worker.js .",
-    "start": "live-server --port=8080 --entry-file=index.html",
-    "dev": "npm run build && npm start",
-    "predeploy": "npm run build",
-    "deploy": "git add . && git commit -m 'Build for deployment' && git push origin main"
+    "start": "live-server --port=8080 --entry-file=index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cssnano-cli": "^1.0.5",
-    "gh-pages": "^3.2.3",
-    "sharp": "^0.32.6",
+    "live-server": "^1.2.1",
     "terser": "^5.34.1"
   },
   "homepage": "https://beernerd-io.github.io/beernerd"
