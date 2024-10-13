@@ -5,13 +5,13 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdir -p public/js public/css",
-    "build": "terser src/js/app.js -o public/js/app.min.js && cssnano src/css/styles.css > public/css/styles.min.css",
-    "postbuild": "cp src/images/* public/images/ && cp src/manifest.json public/ && cp src/service-worker.js public/",
-    "start": "live-server public --port=8080 --entry-file=index.html",
+    "prebuild": "mkdir -p js css",
+    "build": "terser src/js/app.js -o js/app.min.js && cssnano src/css/styles.css > css/styles.min.css",
+    "postbuild": "cp src/images/* images/ && cp src/manifest.json . && cp src/service-worker.js .",
+    "start": "live-server --port=8080 --entry-file=index.html",
     "dev": "npm run build && npm start",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d public"
+    "deploy": "git add . && git commit -m 'Build for deployment' && git push origin main"
   },
   "keywords": [],
   "author": "",
