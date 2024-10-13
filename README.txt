@@ -99,3 +99,5 @@ Open your browser and go to http://localhost:8080.
 Make changes to your source files in the src directory.
 Run npm run build to update the minified files.
 Refresh your browser to see the changes.
+
+Service worker settings: Remember to remove or modify this code before deploying to production, as you typically want service workers to persist between page loads in a live environment. For production, you might want to implement a more sophisticated update strategy, such as using the updateViaCache option or implementing a specific update flow.

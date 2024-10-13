@@ -5,8 +5,8 @@
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdir -p public/js public/css",
-    "build": "npm run prebuild && terser src/js/app.js -o public/js/app.min.js && terser src/components/tasks.js -o public/js/tasks.min.js && cssnano src/css/styles.css public/css/styles.min.css",
+    "prebuild": "mkdir -p public/js public/css && node resize-icon.js",
+    "build": "terser src/js/app.js -o public/js/app.min.js && terser src/components/task.js -o public/js/task.min.js && cssnano src/css/styles.css > public/css/styles.min.css",
     "start": "live-server public --port=8080 --entry-file=index.html",
     "dev": "npm run build && npm start",
     "predeploy": "npm run build",
@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "terser": "^5.34.1",
     "cssnano-cli": "^1.0.5",
-    "gh-pages": "^5.0.0"
+    "sharp": "^0.32.6",
+    "terser": "^5.34.1"
   },
   "homepage": "https://beernerd-io.github.io/beernerd"
 }
