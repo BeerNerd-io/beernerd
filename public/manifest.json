@@ -1,7 +1,7 @@
 {
   "name": "Beer Nerd Labs",
   "short_name": "BeerNerd",
-  "start_url": "/index.html",
+  "start_url": "/beernerd/index.html",
   "display": "standalone",
   "background_color": "#28282B",
   "theme_color": "#a9a42c",
